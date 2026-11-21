@@ -1,0 +1,26 @@
+# Core stack pinned to the preparation/test environment.
+# This is not a validated historical environment lock for the complete workflow.
+numpy==2.3.5
+pandas==2.2.3
+scikit-learn==1.8.0
+matplotlib==3.10.8
+
+# Scientific computing (sparse matrices, statistics)
+scipy
+
+# Deep learning (Model 3: regional multitask DL; single-cell transfer)
+torch
+
+# Single-cell input I/O (HDF5-backed AnnData, MEX matrices)
+h5py
+anndata
+
+# Model serialization
+joblib
+
+# Notebook runtime
+ipython
+jupyterlab
+
+# Required to read the GSE327167 supplementary workbook.
+openpyxl
