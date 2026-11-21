@@ -1,0 +1,35 @@
+{
+  "report_target": "Model.ipynb (manuscript modeling workflow; 9 sections, 215 cells)",
+  "notebook_schema": "passed",
+  "ascii_only": false,
+  "ascii_note": "Only Unicode typographic symbols are present (en dash U+2013, minus U+2212, arrows U+2191/2192/2193, greater-or-equal U+2265, multiplication U+00D7, fullwidth colon/semicolon U+FF1A/U+FF1B) in display labels and f-strings; no CJK content and no patient identifiers.",
+  "saved_outputs": 0,
+  "sections": 9,
+  "code_cells": 92,
+  "markdown_cells": 123,
+  "synthetic_workflow_execution": "pending re-execution for this revision; previously passed on the 11-cell condensed TCGA workflow",
+  "source_split_reuse": "passed (static review: fixed 80/20 stratified split file, seed 20261016, reused across stages)",
+  "training_only_scaling": "passed (static review: scalers fitted on training folds only; frozen checkpoint mean/std reused at inference)",
+  "strict_input_checks": "passed (static review: require() assertions and per-stage integrity checks throughout)",
+  "aggregate_export_privacy": "Static review: no saved notebook outputs. Scientific stages write local patient-level results that must remain outside Git.",
+  "real_TCGA_execution": "not performed; local inputs required",
+  "validation_environment": {
+    "Python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "additional_packages": [
+      "scipy",
+      "torch",
+      "h5py",
+      "anndata",
+      "joblib",
+      "ipython",
+      "jupyterlab"
+    ],
+    "additional_packages_note": "versions not recorded by the previous validation run"
+  },
+  "notebook_sha256": "3258ffb0a9ea3fe99aebfe3559460dd710a4ee6522ea66da93f97f4154f1180e",
+  "notes": "This report supersedes the report written for the 11-cell condensed TCGA workflow (archived as validation_report_condensed_11cell.json). Execution-dependent checks (synthetic_workflow_execution, real_TCGA_execution) should be re-run on the analysis server before publication. Documentation corrected to distinguish multi-cancer CPTAC validation from GBM16 snRNA transfer, use 1,000 holdout bootstrap resamples, and avoid claiming full scientific execution."
+}
