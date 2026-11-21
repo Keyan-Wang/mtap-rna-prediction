@@ -82,4 +82,36 @@ committing changes.
 
 Publication citation and software-release details will be added when available.
 
+## Synthetic demonstration
 
+A small synthetic L2 example is provided to check installation, train/test
+splitting, training-only scaling, metric calculation, and plotting. It does
+not use patient data, load the manuscript models, or validate their performance.
+
+Run from the repository root:
+
+```bash
+python -m pip install -r requirements-demo.txt
+python scripts/synthetic_l2_demo.py
+```
+
+The example creates 300 synthetic observations, with 240 training rows and
+60 test rows, and writes the following files to `outputs/synthetic_demo/`:
+
+- `synthetic_demo_metrics.json`
+- `synthetic_demo_curves.pdf`
+- `synthetic_demo_curves.png`
+
+No GPU is required. The example was run on Linux with Python 3.12.14 and the
+package versions listed in `requirements-demo.txt`. Synthetic scores are not
+scientific validation results and must not be included in manuscript figures.
+
+To record the current environment without running an analysis:
+
+```bash
+python scripts/capture_environment.py
+```
+
+This writes package-version records to `outputs/environment_audit/`.
+An observed environment is not considered validated until the relevant
+scientific workflow has been reproduced in it.
